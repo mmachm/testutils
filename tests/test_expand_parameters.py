@@ -19,7 +19,7 @@ class TestExpandParameters(TestCase):
             def dummy_test(self, x="test", y="test"):
                 return x, y
 
-            dummy_test_1 # <- this would fail if Dummy was just a function, why??
+            dummy_test_1  # <- this would fail if Dummy was just a function, why??
 
 
         dummy = Dummy()
@@ -51,7 +51,7 @@ class TestExpandParameters(TestCase):
                 return x, y
             pprint(locals())
 
-        dummy=Dummy()
+        dummy = Dummy()
 
         self.assertEqual(("hello", "world"), dummy.dummy_test_0_hello())
         self.assertEqual(("hello", "test"), dummy.dummy_test_1_hello())
