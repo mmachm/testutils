@@ -5,9 +5,9 @@ Those are little helper tools that I have developed in my free time to help me w
 
 ## Expand Parameters
 
-Expand parameters is an upgraded version of parameterize.expand(), which does not return None.
-When one tries to run `parameterize.expand`decorated testcase, one gets an error along the lines of 
-cannot create a test from None, because the return value of the original decorator is None. 
+Expand parameters is an upgraded version of `parameterize.expand`, which does not return `None`.
+When one tries to run `expand`decorated testcase, one gets an error along the lines of 
+`cannot create a test from None`, because the return value of the original decorator is `None`. 
 With the new decorator one can run the function directly with the little green arrow in Pycharm. 
 And one can choose which parametrization case will be taken as default.
 
